@@ -26,6 +26,7 @@ header h1 {
     width: 5rem;
     height: 5rem;
     background-color: salmon;
+    border-radius: 50%;
     z-index: 3;
     right: 2rem;
     bottom: 2rem;
@@ -33,9 +34,14 @@ header h1 {
     transform: translateY(100%);
     transition: all .3s;
     cursor: pointer;
+    content: "";
 }
 
 header.scroll .fixedTop {
+    background-image: url(../img/top_arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     opacity: 1;
     transform: translateY(0);
 }
@@ -300,6 +306,9 @@ header.navOpen .header-btn span:nth-child(3) {
     background-image: url(../img/depth5_deco3.png);
 }
 
+section.dep6 {
+    overflow: hidden;
+}
 .dep6 {
     text-align: center;
 }
